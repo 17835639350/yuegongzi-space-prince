@@ -4,10 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>越公子｜空间王子</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: #0a0a0a;
+        color: #f4f4f4;
+      }
+
+      .boot-fallback {
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        box-sizing: border-box;
+        background:
+          radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.14), transparent 34%),
+          #0a0a0a;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif;
+      }
+
+      .boot-fallback__brand {
+        margin: 0 0 14px;
+        font-size: 15px;
+        letter-spacing: 0.22em;
+        color: #d4af37;
+      }
+
+      .boot-fallback__title {
+        margin: 0;
+        font-family: "Noto Serif SC", "Songti SC", serif;
+        font-size: clamp(30px, 9vw, 58px);
+        font-weight: 400;
+        line-height: 1.25;
+      }
+
+      .boot-fallback__hint {
+        margin: 18px 0 0;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        color: rgba(244, 244, 244, 0.62);
+      }
+    </style>
     <script type="module" crossorigin src="./assets/github-pages-inline/index-main.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/assets/index-BMs3sDjD.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main class="boot-fallback" aria-busy="true">
+        <div>
+          <p class="boot-fallback__brand">YUE GONGZI</p>
+          <h1 class="boot-fallback__title">越公子｜空间王子</h1>
+          <p class="boot-fallback__hint">正在进入空间美学</p>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
